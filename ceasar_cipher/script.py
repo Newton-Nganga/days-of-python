@@ -17,6 +17,10 @@
    c. Append the shifted char to the variables
 7. Return deciphered message
 '''
+import pyfiglet as pfg
+from termcolor import colored
+
+text = pfg.figlet_format('ceasar cipher',font='doom')
 
 def caesar_cipher(message,shift):
     ciphered_message  = ""
@@ -32,7 +36,7 @@ def caesar_cipher(message,shift):
             #preserve non alphabets
             ciphered_message += char
             
-    print(f'ciphered message : {ciphered_message}')
+    print(f'ciphered message : {colored(ciphered_message,"green")}')
     return ciphered_message
 
 def caesar_decipher(message,shift):
@@ -40,8 +44,9 @@ def caesar_decipher(message,shift):
 
 
 def lets_cipher():
+    print(colored(text,'green'))
     print("Welcome to ceasar cipher")
-    reply = int(input("Reply with 1 to encode and 2 to decode : "))
+    reply = int(input(colored("Reply with 1 to encode and 2 to decode : ","green")))
     direction = "encode" if reply == 1 else "decode"
     message = input(f'Type in the message to {direction} : ')
     steps =  int(input("Type the shift number : "))
