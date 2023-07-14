@@ -33,6 +33,15 @@ The deciphering Script
 def caesar_decipher(message,shift):
     return caesar_cipher(message,-shift)
 ```
+## Running the program
+ Clone this repo
+ ```sh
+    git clone https://github.com/Newton-Nganga/days-of-python.git
+ ```
+ mOve into the ceaser_cipher directory and run the pyhton script
+ ```sh
+    cd days-of-python/ceasar_cipher && python3 script.py
+ ```
 ## The view of the Program
 ```sh
                                       _       _               
