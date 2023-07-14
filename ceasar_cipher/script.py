@@ -20,7 +20,7 @@
 import pyfiglet as pfg
 from termcolor import colored
 
-text = pfg.figlet_format('ceasar cipher',font='doom')
+text = pfg.figlet_format('ceasar cipher',font='doom').center(80)
 
 def caesar_cipher(message,shift):
     ciphered_message  = ""
